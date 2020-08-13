@@ -1,38 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .App {
+  height: 100vh;
+  background: rgb(36, 36, 35);
+}
+.beerArticle img {
+  display: block;
+  width: 10%;
+}
+header {
+  width: 100%;
+  height: 10vh;
+  background: rgb(238, 215, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-home {
+  color: white;
+  font-size: 2.5em;
+}
+.bg-photo-random {
+  background: url(https://images.unsplash.com/photo-1436076863939-06870fe779c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)
+    center/cover no-repeat;
+  height: 40vh;
+}
+.bg-photo-all {
+  background: url(https://images.unsplash.com/photo-1505075106905-fb052892c116?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)
+    center/cover no-repeat;
+  height: 40vh;
+}
+.link-all,
+.link-random {
+  font-size: 2em;
+  padding-left: 1%;
+  color: white;
+}
+#home-section {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background: rgb(36, 36, 35);
+  color: white;
+}
+#home-section article {
+  height: 50vh;
+}
+#home-section article p {
+  padding-left: 1%;
+}
+.detailsArticle {
   text-align: center;
+  padding-top: 3vh;
+  background: rgb(36, 36, 35);
+  color: white;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.detailsArticle img {
+  width: 15%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.beerList div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3em;
+  text-align: center;
+  padding-top: 3vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.beerArticle {
+  width: 100%;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.beerArticle img {
+  width: 25%;
+}
+.beerList {
+  background: rgb(36, 36, 35);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.readMore {
+  text-decoration: none;
+  color: white;
 }
